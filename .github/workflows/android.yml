@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
@@ -86,7 +86,7 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
           name: Dantotsu
-          path: "app/build/outputs/apk/google/alpha/app-google-alpha.apk"
+          path: app/build/outputs/apk/debug/app-debug.apk
             
     - name: Upload APK to Discord and Telegram
       shell: bash
